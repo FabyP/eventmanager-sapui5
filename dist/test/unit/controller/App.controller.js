@@ -1,0 +1,1 @@
+sap.ui.define(["ba/eventmanager-openui5/controller/App.controller"],function(n){"use strict";QUnit.module("App Controller");QUnit.test("I should test the App controller",function(t){var e=new n;e.onInit();t.ok(e)})});

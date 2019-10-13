@@ -1,0 +1,36 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="ba.eventmanager-openui5.controller.Detail"
+	xmlns:l="sap.ui.layout" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="detail" class="sapUiResponsiveContentPadding" showHeader="false">
+		<landmarkInfo>
+			<PageAccessibleLandmarkInfo
+				rootRole="Region"
+				rootLabel="Detail Seite des Events {eventData>name}"
+				contentRole="Main"
+				contentLabel="Main"/>
+		</landmarkInfo>
+		<content>
+			<l:VerticalLayout id="containerLayout" width="100%">
+				<l:BlockLayout>
+					<l:BlockLayoutRow>
+						<l:BlockLayoutCell width="2">
+							<VBox >
+								<Title text="{eventData>name}" level="H3" titleStyle="H3" class="sapUiSmallMarginBottom"/>
+								<Label text="Datum"/>
+								<Text text="{eventData>date}, {eventData>time} Uhr" class="sapUiSmallMarginBottom"/>
+								<Label text="Ort"/>
+								<Text text="{eventData>location}" class="sapUiSmallMarginBottom"/>
+								<Label text="Veranstalter"/>
+								<Text text="{eventData>host}" class="sapUiSmallMarginBottom"/>
+								<Label text="Beschreibung"/>
+								<Text text="{eventData>description}" class="sapUiSmallMarginBottom"/>
+							</VBox>
+						</l:BlockLayoutCell>
+						<l:BlockLayoutCell width="2">
+								<Image width="100%" src="{eventData>img}" alt="{eventData>alt}" decorative="false"/>
+						</l:BlockLayoutCell>
+					</l:BlockLayoutRow>
+				</l:BlockLayout>
+			</l:VerticalLayout>
+		</content>
+	</Page>
+</mvc:View>

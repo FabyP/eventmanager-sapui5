@@ -1,0 +1,60 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="ba.eventmanager-openui5.controller.Privacy"
+	xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="Privacy" showHeader="false">
+		<landmarkInfo>
+			<PageAccessibleLandmarkInfo
+				rootRole="Region"
+				rootLabel="Datenschutzerklärung"
+				contentRole="Main"
+				contentLabel="Main"/>
+		</landmarkInfo>
+		<content>
+			<VBox class="sapUiMediumMargin sapUiResponsiveContentPadding">
+				<Title text="Datenschutzerklärung" level="H1" titleStyle="H1" class="sapUiSmallMarginBottom"/>
+				<Text class="sapUiSmallMarginBottom" text="Verantwortlicher im Sinne der Datenschutzgesetze, insbesondere der EU-Datenschutzgrundverordnung (DSGVO), ist:"/>
+				<Text text="Fabienne Pipping"/>
+				<Text text="Gänsweide 28"/>
+				<Text text="35745 Herborn"/>
+				<Text text="02772 40728"/>
+				<Link href="mailto:fabienne.pipping@iem.thm.de" text="fabienne.pipping@iem.thm.de" class="sapUiSmallMarginBottom"/>
+				<Title text="Ihre Betroffenenrechte" level="H2" titleStyle="H2" class="sapUiSmallMarginTopBottom"/>
+				<Text text="Unter den angegebenen Kontaktdaten unseres Datenschutzbeauftragten können Sie jederzeit folgende Rechte ausüben:"/>
+				<core:HTML content="&lt;ul style=&quot;font-size: 14px&quot;&gt; 
+				&lt;li&gt;Auskunft über Ihre bei uns gespeicherten Daten und deren Verarbeitung,&lt;/li&gt;
+				&lt;li&gt;Berichtigung unrichtiger personenbezogener Daten (Art. 16 DSGVO),&lt;/li&gt;
+				&lt;li&gt;Löschung Ihrer bei uns gespeicherten Daten (Art. 17 DSGVO),&lt;/li&gt;
+				&lt;li&gt;Einschränkung der Datenverarbeitung, sofern wir Ihre Daten aufgrund gesetzlicher Pflichten noch nicht löschen dürfen (Art. 18 DSGVO),&lt;/li&gt;
+				&lt;li&gt;Widerspruch gegen die Verarbeitung Ihrer Daten bei uns (Art. 21 DSGVO) und&lt;/li&gt;
+				&lt;li&gt;Datenübertragbarkeit, sofern Sie in die Datenverarbeitung eingewilligt haben oder einen Vertrag mit uns abgeschlossen haben (Art. 20 DSGVO).&lt;/li&gt;
+				&lt;/ul&gt; 
+				"></core:HTML>
+				
+				<Text text="Sofern Sie uns eine Einwilligung erteilt haben, können Sie diese jederzeit mit Wirkung für die Zukunft widerrufen."/>
+				<Text
+					text="Sie können sich jederzeit mit einer Beschwerde an eine Aufsichtsbehörde wenden, z. B. an die zuständige Aufsichtsbehörde des Bundeslands Ihres Wohnsitzes oder an die für uns als verantwortliche Stelle zuständige Behörde."/>
+				<core:HTML
+					content='&lt;p style=&quot;font-size: 14px&quot;&gt;Eine Liste der Aufsichtsbehörden (für den nichtöffentlichen Bereich) mit Anschrift finden Sie unter: &lt;a target=&quot;_blank&quot; href=&quot;https://www.bfdi.bund.de/DE/Infothek/Anschriften_Links/anschriften_links-node.html&quot;&gt;https://www.bfdi.bund.de/DE/Infothek/Anschriften_Links/anschriften_links-node.html&lt;/a&gt;&lt;/p&gt; '></core:HTML>
+				
+				<Title text="Änderung unserer Datenschutzbestimmungen" level="H2" titleStyle="H2" class="sapUiSmallMarginTopBottom"/>
+				<Text text="Wir behalten uns vor, diese Datenschutzerklärung anzupassen, damit sie stets den aktuellen rechtlichen Anforderungen entspricht oder um Änderungen unserer Leistungen in der Datenschutzerklärung umzusetzen, z.B. bei der Einführung neuer Services. Für Ihren erneuten Besuch gilt dann die neue Datenschutzerklärung"/>
+				
+				<Title text="Fragen an den Datenschutzbeauftragten" level="H2" titleStyle="H2" class="sapUiSmallMarginTopBottom"/>
+				<Text class="sapUiSmallMarginBottom" text="Das Angebot enthält Links zu externen Websites Dritter, auf deren Inhalte ich keinen Einfluss habe. Deshalb kann ich für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar."/>
+				<Text text="Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Links umgehend entfernen."/>
+				
+				<Title text="Urherberrecht" level="H2" titleStyle="H2" class="sapUiSmallMarginTopBottom"/>
+				<Text text="Wenn Sie Fragen zum Datenschutz haben, schreiben Sie uns bitte eine E-Mail oder wenden Sie sich direkt an die für den Datenschutz verantwortliche Person in unserer Organisation:"/>
+				
+				<core:HTML content='&lt;p style=&quot;font-size: 14px&quot;&gt;
+				&lt;em&gt;
+				Die Datenschutzerklärung wurde mithilfe der activeMind AG erstellt, den Experten für 
+				&lt;a target=&quot;_blank&quot; href=&quot;https://www.activemind.de/datenschutz/datenschutzhinweis-generator/&quot;&gt;externe Datenschutzbeauftragte&lt;/a&gt;
+				(Version #2019-04-10).
+				&lt;/em&gt;
+				&lt;/p&gt;
+				'>
+				</core:HTML>
+			</VBox>
+		</content>
+	</Page>
+</mvc:View>

@@ -1,0 +1,169 @@
+{
+	"_version": "1.12.0",
+	"sap.app": {
+		"id": "ba.eventmanager-openui5",
+		"type": "application",
+		"applicationVersion": {
+			"version": "1.0.0"
+		},
+		"title": "{{appTitle}}",
+		"description": "{{appDescription}}",
+		"sourceTemplate": {
+			"id": "ui5template.basicSAPUI5ApplicationProject",
+			"version": "1.40.12"
+		},
+		"dataSources": {
+			"eventData_alias": {
+				"uri": "model/events.json",
+				"type": "JSON"
+			}
+		}
+	},
+	"sap.ui": {
+		"technology": "UI5",
+		"icons": {
+			"icon": "",
+			"favIcon": "",
+			"phone": "",
+			"phone@2": "",
+			"tablet": "",
+			"tablet@2": ""
+		},
+		"deviceTypes": {
+			"desktop": true,
+			"tablet": true,
+			"phone": true
+		}
+	},
+	"sap.ui5": {
+		"flexEnabled": false,
+		"rootView": {
+			"viewName": "ba.eventmanager-openui5.view.App",
+			"type": "XML",
+			"async": true,
+			"id": "App"
+		},
+		"dependencies": {
+			"minUI5Version": "1.65.6",
+			"libs": {
+				"sap.m": {},
+				"sap.ui.core": {},
+				"sap.ui.layout": {}
+			}
+		},
+		"contentDensities": {
+			"compact": true,
+			"cozy": true
+		},
+		"models": {
+			"i18n": {
+				"type": "sap.ui.model.resource.ResourceModel",
+				"settings": {
+					"bundleName": "ba.eventmanager-openui5.i18n.i18n"
+				}
+			},
+			"eventData": {
+				"type": "sap.ui.model.json.JSONModel",
+				"dataSource": "eventData_alias",
+				"settings": {
+					"useBatch": false
+				}
+			}
+		},
+		"resources": {
+			"css": [
+				{
+					"uri": "css/style.css"
+				}
+			]
+		},
+		"routing": {
+			"config": {
+				"routerClass": "sap.m.routing.Router",
+				"viewType": "XML",
+				"async": true,
+				"viewPath": "ba.eventmanager-openui5.view",
+				"controlAggregation": "pages",
+				"controlId": "app",
+				"clearControlAggregation": false
+			},
+			"routes": [
+				{
+					"name": "RouteApp",
+					"pattern": "",
+					"target": [
+						"TargetApp"
+					]
+				},
+				{
+					"name": "Overview",
+					"pattern": "Overview",
+					"target": [
+						"Overview"
+					]
+				},
+				{
+					"name": "Imprint",
+					"pattern": "Imprint",
+					"target": [
+						"Imprint"
+					]
+				},
+				{
+					"name": "Detail",
+					"pattern": "Detail/{eventKey}",
+					"target": [
+						"Detail"
+					]
+				},
+				{
+					"name": "Privacy",
+					"pattern": "Privacy",
+					"titleTarget": "",
+					"greedy": false,
+					"target": [
+						"Privacy"
+					]
+				}
+			],
+			"targets": {
+				"TargetApp": {
+					"viewType": "XML",
+					"transition": "slide",
+					"clearControlAggregation": false,
+					"viewId": "Home",
+					"viewName": "Home",
+					"viewLevel": 1
+				},
+				"Overview": {
+					"viewType": "XML",
+					"viewName": "Overview",
+					"viewLevel": 2,
+					"viewId": "Overview"
+				},
+				"Detail": {
+					"pattern": "Detail",
+					"viewType": "XML",
+					"viewName": "Detail",
+					"viewId": "Detail",
+					"viewLevel": 3
+				},
+				"Imprint": {
+					"pattern": "Imprint",
+					"viewType": "XML",
+					"viewName": "Imprint",
+					"viewLevel": 2
+				},
+				"Privacy": {
+					"viewType": "XML",
+					"viewName": "Privacy",
+					"viewLevel": 2
+				}
+			}
+		}
+	},
+	"sap.platform.hcp": {
+		"uri": "webapp",
+		"_version": "1.1.0"
+	}
+}

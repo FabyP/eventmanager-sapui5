@@ -1,0 +1,123 @@
+{
+
+	"featured": {
+		"sap.app": {
+			"type": "card",
+			"id": "featuredCard"
+		},
+		"sap.card": {
+			"type": "Timeline",
+			"header": {
+				"title": "Upcoming Events",
+				"status": {
+					"text": "3 von 9"
+				},
+				"subTitle": "in Sapolis",
+				"actions": [{
+					"type": "Navigation",
+					"url": "#/Overview",
+					"target": "_self"
+				}]
+			},
+			"content": {
+				"data": {
+					"json": [{
+						"key": "1",
+						"title": "Sapolis Sommerfest",
+						"subtitle": "27 Jul 2019, 19:00 - 01:00",
+						"location": "Innenstadt",
+						"icon": "sap-icon://calendar"
+					}, {
+						"key": "2",
+						"title": "Sapolis Cocktail Festival",
+						"subtitle": "16 Aug 2019, 17:00 - 23:30",
+						"location": "Stadtpark",
+						"icon": "sap-icon://calendar"
+					}, {
+						"key": "3",
+						"title": "Sapolis Kinderspektakel",
+						"subtitle": "25 Aug 2019, 11:00 - 17:00",
+						"location": "Stadtpark",
+						"icon": "sap-icon://calendar"
+					}]
+				},
+				"item": {
+					"title": {
+						"value": "{title}"
+					},
+					"description": {
+						"value": "{location}"
+					},
+					"icon": {
+						"src": "{icon}"
+					},
+					"dateTime": {
+						"value": "{subtitle}"
+					}
+				}
+			}
+		}
+
+	},
+	
+	"quicklinks": {
+		"sap.app": {
+			"type": "card",
+			"id": "quicklinksCard"
+		},
+		"sap.card": {
+			"type": "List",
+			"header": {
+				"title": "Quick Links",
+				"status": {
+					"text": "7 of 7"
+				}
+			},
+			"content": {
+				"data": {
+					"json": [{
+						"Name": "Impressum",
+						"icon": "sap-icon://official-service",
+						"url": "#/Imprint"
+					}, {
+						"Name": "Datenschutz",
+						"icon": "sap-icon://locked",
+						"url": "#/Privacy",
+						"target": "_self"
+					}, {
+						"Name": "React",
+						"icon": "sap-icon://attachment-html",
+						"url": "https://reactjs.org/"
+					}, {
+						"Name": "UI5 Web Components",
+						"icon": "sap-icon://product",
+						"url": "https://sap.github.io/ui5-webcomponents/"
+					}, {
+						"Name": "SAPUI5",
+						"icon": "sap-icon://sap-ui5",
+						"url": "https://sapui5.hana.ondemand.com/"
+					}, {
+						"Name": "Fiori",
+						"icon": "sap-icon://responsive",
+						"url": "https://experience.sap.com/fiori-design-web/"
+					}, {
+						"Name": "advades GmbH",
+						"icon": "sap-icon://collaborate",
+						"url": "https://www.advades.com/"
+					}]
+				},
+				"item": {
+					"icon": {
+						"src": "{icon}"
+					},
+					"title": "{Name}",
+					"actions": [{
+						"type": "Navigation",
+						"url": "{url}",
+						"target": "_self"
+					}]
+				}
+			}
+		}
+	}
+}

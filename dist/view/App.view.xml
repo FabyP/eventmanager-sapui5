@@ -1,0 +1,12 @@
+<mvc:View controllerName="ba.eventmanager-openui5.controller.App" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m"
+	xmlns:f="sap.f">
+		<VBox>
+			<f:ShellBar id="sapFShellBar" title="Stadtverwaltung" homeIcon="img/favicon.svg" showCopilot="true">
+				<f:profile>
+					<f:Avatar src="img/profile.jpg" press="onProfileClicked"/>
+				</f:profile>
+			</f:ShellBar>
+			<App id="app">
+			</App>
+		</VBox>
+</mvc:View>

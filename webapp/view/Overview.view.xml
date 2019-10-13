@@ -1,0 +1,68 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="ba.eventmanager-openui5.controller.Overview"
+	xmlns:html="http://www.w3.org/1999/xhtml" xmlns:f="sap.f">
+	<Page title="Overview" showHeader="false">
+		<landmarkInfo>
+			<PageAccessibleLandmarkInfo
+				rootRole="Region"
+				rootLabel="Overview Seite"
+				contentRole="Main"
+				contentLabel="Main"
+				headerRole="Banner"
+				headerLabel="Header Veranstaltungen"/>
+		</landmarkInfo>
+		<content>
+			
+			<ObjectHeader title="Übersicht Veranstaltungen" backgroundDesign="Solid"></ObjectHeader>
+			<IconTabBar id="idIconTabBarNoIcons" expanded="false" class="sapUiResponsiveContentPadding" headerMode="Inline" expandable="false"
+				select="categorySelect">
+				<items>
+					<IconTabFilter text="Alle" count="{viewModel>/allEventsCount}" key="All"></IconTabFilter>
+					<IconTabFilter text="Party" count="{viewModel>/partyCount}" key="Party"></IconTabFilter>
+					<IconTabFilter text="Familie" count="{viewModel>/familyCount}" key="Familie"></IconTabFilter>
+					<IconTabFilter text="Markt" count="{viewModel>/marketCount}" key="Markt"></IconTabFilter>
+					<IconTabFilter text="Sonstige" count="{viewModel>/otherCount}" key="Sonstige"></IconTabFilter>
+				</items>
+			</IconTabBar>
+			
+			<Table id="eventsTable" items="{events>/Events}" class="sapUiResponsiveContentPadding">
+				<headerToolbar>
+					<OverflowToolbar id="otbSubheader">
+						<Title text="Events" level="H3" titleStyle="H3"/>
+						<ToolbarSpacer/>
+						<SearchField id="maxPrice" liveChange="onFilterEvents" ariaLabelledBy="searchFieldLabel" ariaDescribedBy="searchFieldDescription"
+							placeholder="Suche">
+							<layoutData><OverflowToolbarLayoutData minWidth="200px" maxWidth="300px" shrinkable="true"/></layoutData>
+						</SearchField>
+						<Button text="Erstellen" type="Transparent" press="onAdd" />
+						<OverflowToolbarButton type="Transparent" text="Sort" icon="sap-icon://sort-descending" press="onSortDesc"/>
+						<OverflowToolbarButton type="Transparent" text="Group" icon="sap-icon://sort-ascending" press="onSortAsc"/>
+					</OverflowToolbar>
+				</headerToolbar>
+				<columns>
+					<Column width="12em">
+						<Text text="Event"/>
+					</Column>
+					<Column minScreenWidth="900px" demandPopin="true">
+						<Text text="Datum"/>
+					</Column>
+					<Column minScreenWidth="900px" demandPopin="true">
+						<Text text="Uhrzeit"/>
+					</Column>
+					<Column minScreenWidth="600px" demandPopin="true">
+						<Text text="Ort"/>
+					</Column>
+				</columns>
+				<items>
+					<ColumnListItem type="Navigation" press="goToDetail">
+						<cells>
+							<ObjectIdentifier title="{events>name}"/>
+							<Text text="{events>date}"/>
+							<Text text="{events>time}"/>
+							<Text text="{events>location}"/>
+						</cells>
+					</ColumnListItem>
+				</items>
+			</Table>
+		</content>
+	</Page>
+</mvc:View>

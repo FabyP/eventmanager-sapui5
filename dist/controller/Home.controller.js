@@ -1,0 +1,1 @@
+sap.ui.define(["sap/ui/core/mvc/Controller","sap/ui/model/json/JSONModel"],function(e,n){"use strict";return e.extend("ba.eventmanager-openui5.controller.Home",{onInit:function(){var e=new n("./model/cardManifests.json");this.getView().setModel(e,"manifests")}})});

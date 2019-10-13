@@ -1,0 +1,33 @@
+<mvc:View controllerName="ba.eventmanager-openui5.controller.Home" xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" xmlns:f="sap.f"
+	xmlns:w="sap.ui.integration.widgets" xmlns:cssgrid="sap.ui.layout.cssgrid">
+	<Page title="Home" showHeader="false">
+		<landmarkInfo>
+			<PageAccessibleLandmarkInfo
+				rootRole="Region"
+				rootLabel="Home Seite"
+				contentRole="Main"
+				contentLabel="Main"/>
+		</landmarkInfo>
+		<content>
+			<Title text="Featured" class="sapUiSmallMarginBottom sapUiSmallMarginTop sapUiSmallMarginBegin" titleStyle="H1"/>
+			<f:GridContainer class="sapUiSmallMarginBeginEnd">
+				<f:layout>
+					<f:GridContainerSettings rowSize="4rem" columnSize="4rem" gap="1rem"/>
+				</f:layout>
+				<f:layoutS>
+					<f:GridContainerSettings rowSize="4rem" columnSize="4rem" gap="0.5rem"/>
+				</f:layoutS>
+				<w:Card manifest="{manifests>/featured}">
+					<w:layoutData>
+						<f:GridContainerItemLayoutData rows="5" columns="4"/>
+					</w:layoutData>
+				</w:Card>
+				<w:Card manifest="{manifests>/quicklinks}">
+					<w:layoutData>
+						<f:GridContainerItemLayoutData rows="5" columns="4"/>
+					</w:layoutData>
+				</w:Card>
+			</f:GridContainer>
+		</content>
+	</Page>
+</mvc:View>

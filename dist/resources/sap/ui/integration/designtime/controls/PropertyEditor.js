@@ -1,0 +1,6 @@
+/*!
+ * OpenUI5
+ * (c) Copyright 2009-2019 SAP SE or an SAP affiliate company.
+ * Licensed under the Apache License, Version 2.0 - see LICENSE.txt.
+ */
+sap.ui.define(["sap/ui/core/Control","sap/m/Label"],function(e,t){"use strict";var r=e.extend("sap.ui.integration.designtime.controls.PropertyEditor",{metadata:{properties:{renderLabel:{type:"boolean",defaultValue:true}},aggregations:{_label:{type:"sap.m.Label",visibility:"hidden",multiple:false},content:{type:"sap.ui.core.Control"}},events:{propertyChanged:{parameters:{path:{type:"string"},value:{type:"any"}}}}},getPropertyInfo:function(){return this.getBindingContext().getObject()},getLabel:function(){var e=this.getAggregation("_label");if(!e){e=new t({text:this.getPropertyInfo().label});this.setAggregation("_label",e)}return e},renderer:function(e,t){e.write("<div");e.writeElementData(t);e.writeClasses();e.writeStyles();e.write(">");if(t.getRenderLabel()){e.write("<div>");e.renderControl(t.getLabel());e.write("</div><div>")}t.getContent().forEach(function(t){e.renderControl(t)});if(t.getRenderLabel()){e.write("</div>")}e.write("</div>")},firePropertyChanged:function(e){this.fireEvent("propertyChanged",{path:this.getPropertyInfo().path,value:e})}});return r});

@@ -1,0 +1,72 @@
+<core:FragmentDefinition
+	xmlns="sap.m"
+	xmlns:core="sap.ui.core"
+	xmlns:f="sap.f"
+	xmlns:l="sap.ui.layout">
+	<Popover
+		class="sapUiContentPadding"
+		placement="Bottom"
+		initialFocus="email"
+		showHeader="false">
+
+
+			<l:VerticalLayout
+		width="100%" >
+				<l:content>
+			<VBox alignItems="Center" class="sapUiSmallMarginBottom">
+			<f:Avatar
+				src="img/profile.jpg"
+				displaySize="L">
+			</f:Avatar>
+			<Title
+			text="Fabienne Pipping" level="H3" titleStyle="H3" id="person"/>
+			<Label text="Bachelorand" labelFor="person"/>
+			</VBox >
+			<List showSeparators="None">
+				<CustomListItem >
+					<HBox
+					alignContent="Center"
+					alignItems="Center">
+					<core:Icon src="sap-icon://palette" />
+					<Text class="sapUiSmallMargin"
+					text="High Contrast Black"/>
+					<Switch 
+					customTextOff=" " 
+					customTextOn=" "
+					change="onThemeSwitchPressed"
+					/>
+					</HBox>
+				</CustomListItem>
+				<CustomListItem>
+					<HBox
+					alignContent="Center"
+					alignItems="Center">
+					<core:Icon src="sap-icon://settings" />
+					<Text class="sapUiSmallMargin"
+					text="Settings"/>
+					</HBox>
+				</CustomListItem>
+				<CustomListItem>
+					<HBox
+					alignContent="Center"
+					alignItems="Center">
+					<core:Icon src="sap-icon://sys-help" />
+					<Text class="sapUiSmallMargin"
+					text="Help"/>
+					</HBox>
+				</CustomListItem>
+				<CustomListItem>
+					<HBox
+					alignContent="Center"
+					alignItems="Center">
+					<core:Icon src="sap-icon://log" />
+					<Text class="sapUiSmallMargin"
+					text="Sign out"/>
+					</HBox>
+				</CustomListItem>
+			</List>
+			</l:content>
+			</l:VerticalLayout>
+
+	</Popover>
+</core:FragmentDefinition>

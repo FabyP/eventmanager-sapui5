@@ -1,0 +1,102 @@
+{
+	"Events": [{
+		"key": 1,
+		"name": "Sapolis Sommerfest",
+		"date": "27.07.2019",
+		"time": "19:00 - 01:00",
+		"location": "Innenstadt",
+		"img": "./img/sommerfest.jpg",
+		"alt": "Bild vom Sommerfest",
+		"description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+		"host": "Stadtmarketing Sapolis",
+		"category": "Party"
+	}, {
+		"key": 2,
+		"name": "Sapolis Cocktail Festival",
+		"date": "16.08.2019",
+		"time": "17:00 - 23:30",
+		"location": "Stadtpark",
+		"img": "./img/cocktail.jpg",
+		"alt": "Cocktail",
+		"description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+		"host": "Stadtmarketing Sapolis",
+		"category": "Party"
+	}, {
+		"key": 3,
+		"name": "Sapolis Kinderspektakel",
+		"date": "25.08.2019",
+		"time": "11:00 - 17:00",
+		"location": "Stadtpark",
+		"img": "./img/kinderspektakel.jpg",
+		"alt": "Kind auf Hüpfburg",
+		"description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+		"host": "Stadtmarketing Sapolis",
+		"category": "Familie"
+	}, {
+		"key": 4,
+		"name": "Infoveranstaltungen Bienen",
+		"date": "05.09.2019",
+		"time": "18:00 - 21:15",
+		"location": "Bürgerhaus SAP-City",
+		"img": "./img/bienen.jpg",
+		"alt": "Bienen auf Honigwabe",
+		"description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+		"host": "Bienenzuchtverein 'Summ'",
+		"category": "Sonstiges"
+	}, {
+		"key": 5,
+		"name": "Kartoffel Sonntag (verkaufsoffen)",
+		"date": "08.09.2019",
+		"time": "12:00 - 18:00",
+		"location": "Innenstadt",
+		"img": "./img/kartoffel.jpg",
+		"alt": "Marktstand, an dem Kartoffeln verkauft werden",
+		"description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+		"host": "Sapolis Werbering",
+		"category": "Markt"
+	}, {
+		"key": 6,
+		"name": "Oktoberfest",
+		"date": "21.09.2019",
+		"time": "17:30 - 03:00",
+		"location": "Festplatz",
+		"img": "./img/oktoberfest.jpg",
+		"alt": "Mann in Trach mit Maß in der Hand",
+		"description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+		"host": "Stadtmarketing Sapolis",
+		"category": "Party"
+	}, {
+		"key": 7,
+		"name": "Teched Recap",
+		"date": "18.10.2019",
+		"time": "14:00 - 17:00",
+		"location": "advades Tower",
+		"img": "./img/teched.jpg",
+		"alt": "Geschäftliche Infoveranstaltung",
+		"description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+		"host": "advades GmbH",
+		"category": "Sonstiges"
+	}, {
+		"key": 8,
+		"name": "Halloween Party",
+		"date": "31.10.2019",
+		"time": "17:00 - 00:00",
+		"location": "Stadtpark",
+		"img": "./img/halloween.jpg",
+		"alt": "Kürbisse und Kerzen in dunkler Atmosphäre",
+		"description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+		"host": "Stadtmarketing Sapolis",
+		"category": "Party"
+	}, {
+		"key": 9,
+		"name": "Adventssingen",
+		"date": "07.12.2019",
+		"time": "17:00 - 21:00",
+		"location": "Marktplatz",
+		"img": "./img/adventssingen.jpg",
+		"alt": "Weihnachtsmarkt mit Kinderkarussel",
+		"description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+		"host": "Sapolis Werbering",
+		"category": "Familie"
+	}]
+}
